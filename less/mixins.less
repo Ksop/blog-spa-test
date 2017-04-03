@@ -1,0 +1,28 @@
+.clearfix() {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+
+.remove-last(@prop) {
+  &:last-child {
+    @{prop}: 0;
+  }
+}
+
+.push--auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pseudo(@display: block, @pos: absolute, @content: ''){
+  content: @content;
+  display: @display;
+  position: @pos;
+}
+
+

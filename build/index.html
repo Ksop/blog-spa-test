@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<title>Blogs</title>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+	<div class="container">
+
+		<div class="row">
+
+		  <!--~~~~~     SIDEBAR     ~~~~~-->
+			  <div class="sidebar-wrapper">
+
+			    <aside class="sidebar">
+			    
+			      <div class="logo-wrapper">
+			        <a href="/" class="logo">Logotype</a>
+			      </div>
+			    
+			      <h2 class="sidebar__header">Блоги</h2>
+			    
+			      <!--~~~~~     MAIN NAV     ~~~~~-->
+			      <nav id="main-nav" class="main-nav">  
+			    
+			        <ul id="main-nav-list" class="main-nav__list"></ul>
+
+			        <button data-action="create" class="btn  btn--add">Добавить блог</button>
+			    
+			      </nav>
+			      <!--~~~~~     / MAIN NAV     ~~~~~-->
+			    
+			    </aside>
+
+			  </div>
+			<!--~~~~~     / SIDEBAR     ~~~~~-->
+			
+			
+			
+			<!--~~~~~     MAIN CONTENT     ~~~~~-->
+			<main id="main-content" class="main-content">
+
+				<h1>Main page</h1>
+			
+			</main>
+			<!--~~~~~     / MAIN CONTENT     ~~~~~-->
+
+		</div>
+		<!-- /row -->
+
+	</div>
+	<!--/container-->
+
+
+	<!--~~~~~     MODAL FORMS     ~~~~~-->
+	  <div class="modal-form-wrapper">
+
+	    <div class="modal-form-inner">
+
+	      <button id="modal-form-close" class="modal-form-close"></button>
+
+	      <form id="blog-add-form" action="/" method="post" class="modal-form">
+	        <h2 class="modal-form__title">Создать блог</h2>
+	    
+	        <label for="blogName">Название блога:</label>
+	        <input id="blogName" name="blogname" type="text" placeholder="Спорт" required />
+	    
+	        <label for="hash">Хэш:</label>
+	        <input id="hash" name="hash" type="text" placeholder="sport" required/>
+	    
+	        <button type="submit" class="btn  modal-form__btn">Создать</button>
+	      </form>
+
+	    </div>
+	    <!-- /modal__inner -->
+
+	  </div>
+	  <!-- /modal -->
+
+
+	  <div class="modal-form-wrapper">
+
+	    <div class="modal-form-inner">
+
+	      <button id="modal-form-close" class="modal-form-close"></button>
+
+	      <form id="blog-edit-form" action="/" method="post" class="modal-form">
+	        <h2 class="modal-form__title">Редактировать блог</h2>
+	    
+	        <label for="blogName">Название блога:</label>
+	        <input id="blogName" name="blogname" type="text" required />
+	    
+	        <label for="hash">Хэш:</label>
+	        <input id="hash" name="hash" type="text" required/>
+	    
+	        <button type="submit" class="btn  modal-form__btn">Редактировать</button>
+	      </form>
+
+	    </div>
+	    <!-- /modal__inner -->
+
+	  </div>
+	  <!-- /modal -->
+
+
+	  <div class="modal-form-wrapper">
+
+	    <div class="modal-form-inner">
+
+	      <button class="modal-form-close"></button>
+
+	      <form id="post-add-form" action="/" method="post" class="modal-form">
+	        <h2 class="modal-form__title">Создать пост</h2>
+	    
+	        <label for="title">Заголовок поста:</label>
+	        <input id="title" name="title" type="text" required />
+	    
+	        <label for="intro">Пост:</label>
+	        <textarea id="intro" name="intro" rows="10" cols="45" required></textarea>  
+
+	        <button type="submit" class="btn  modal-form__btn">Создать</button>
+	      </form>
+
+	    </div>
+	    <!-- /modal__inner -->
+
+	  </div>
+	  <!-- /modal -->
+
+
+	  <div class="modal-form-wrapper">
+
+	    <div class="modal-form-inner">
+
+	      <button id="modal-form-close" class="modal-form-close"></button>
+
+	      <form id="post-edit-form" action="/" method="post" class="modal-form">
+	        <h2 class="modal-form__title">Редактировать пост</h2>
+	    
+	        <label for="title">Заголовок поста:</label>
+	        <input id="title" name="title" type="text" required />
+	    
+	        <label for="intro">Пост:</label>
+	        <textarea id="intro" name="intro" rows="10" required></textarea>  
+
+	        <button type="submit" class="btn  modal-form__btn">Редактировать</button>
+	      </form>
+
+	    </div>
+	    <!-- /modal__inner -->
+
+	  </div>
+	  <!-- /modal -->
+
+
+
+	<!--~~~~~     / MODAL FORMS     ~~~~~-->
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>

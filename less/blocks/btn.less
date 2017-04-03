@@ -1,0 +1,42 @@
+.btn {
+  display: inline-block;
+  margin-right: 10px;
+  .remove-last(margin-right);
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  font-weight: normal;
+  font-style: normal;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  background-color: @main-color;
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: @accent-color;
+  }
+
+  &--dark { 
+    background-color: @secondary-color;
+    color: @main-color;
+  }
+
+  &--add {
+    width: 100%;
+    padding: @gutter / 2;
+  }
+
+  &--action {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  &--edit   { background-image: url(../../img/settings.png); }
+  &--delete { background-image: url(../../img/clear-button.png); }
+}
